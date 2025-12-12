@@ -20,7 +20,7 @@ class SSHAlpineCheck(BasicCheck):
         commands = commands.replace("{account_password}", random_account.password)
 
         login_username = os.environ.get("SCORINGENGINE_SSH_ALPINE_USERNAME", "root")
-        login_password = os.environ.get("SCORINGENGINE_SSH_ALPINE_PASSWORD", "CHANGEME")
+        login_password = os.environ.get("SCORINGENGINE_SSH_ALPINE_PASSWORD", "e18c2c0a000540742643a2b8ba207ba198124e13")
 
         return (
             self.host,
